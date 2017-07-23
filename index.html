@@ -16,19 +16,11 @@
 				switch (version) {
 					case 5:
 						message = "Mainnet p2sh address: ";
-						version = 50;
+						version = 55;
 						break;
-					case 50:
+					case 55:
 						message = "Mainnet p2sh address (deprecated): ";
 						version = 5;
-						break;
-					case 196:
-						message = "Testnet p2sh address: ";
-						version = 58;
-						break;
-					case 58:
-						message = "Testnet p2sh address (deprecated): ";
-						version = 196;
 						break;
 					default:
 						throw "unknown";
